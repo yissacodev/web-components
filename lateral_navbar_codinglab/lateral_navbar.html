@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lateral_navbar.css">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <div class="logo__img">
+                <i class='bx bxl-c-plus-plus'></i>
+            </div>
+            <div class="logo__name">CodingLab</div>
+        </div>
+
+        <!-- Ctrl + click para ver CSS-->
+        <i class="bx bx-menu" id="btn"></i>
+        <ul class="menu__list">
+            <li class="menu__item">
+                <div class="menu__icon menu__icon--search">
+                    <i class="bx bx-search "></i>
+                </div>
+                <input class="menu__search" type="text" placeholder="Search...">
+                <span class="menu__tooltip">Search</span>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    <div class="menu__icon">
+                        <i class="bx bx-grid-alt"></i>
+                    </div>
+                    <span class="menu__text">Dashboard</span>
+                </a>
+                <span class="menu__tooltip">Dashboard</span>
+            </li>
+            <li class="menu__item"> 
+                <a class="menu__link" href="#">
+                    <div class="menu__icon">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <span class="menu__text">User</span>
+                </a>
+                <span class="menu__tooltip">User</span>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    <div class="menu__icon">
+                        <i class="bx bx-chat"></i>
+                    </div>
+                    <span class="menu__text">Messages</span>
+                </a>
+                <span class="menu__tooltip">Messages</span>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    <div class="menu__icon">
+                        <i class='bx bx-pie-chart-alt' ></i>
+                    </div>
+                    <span class="menu__text">Analytics</span>
+                </a>
+                <span class="menu__tooltip">Analytics</span>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    <div class="menu__icon">
+                        <i class='bx bx-folder' ></i>
+                    </div>
+                    <span class="menu__text">File Manager</span>
+                </a>
+                <span class="menu__tooltip">File</span>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    <div class="menu__icon">
+                        <i class="bx bx-cart-alt"></i>
+                    </div>
+                    <span class="menu__text">Order</span>
+                </a>
+                <span class="menu__tooltip">Order</span>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    <div class="menu__icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+                    <span class="menu__text">Saved</span>
+                </a>
+                <span class="menu__tooltip">Saved</span>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">
+                    <div class="menu__icon">
+                        <i class="bx bx-cog"></i>
+                    </div>
+                    <span class="menu__text">Setting</span>
+                </a>
+                <span class="menu__tooltip">Setting</span>
+            </li>
+        </ul>
+        
+
+        <div class="profile-container">
+            <div class="profile">
+                <img src="img/avatar.png" alt="" class="profile__avatar">
+                <div class="profile__details">
+                    <div class="profile__name">Lorem Ipsum</div>
+                    <div class="profile__job">Lorem Ipsum</div>
+                </div>
+            </div>
+            <span class="profile__logout"><i class="bx bx-log-out"></i></span>
+        </div>
+    </nav>
+
+    <main class="home__content">
+        <div class="home__text">Home Content</div>
+    </main>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let menu = document.querySelector(".menu");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = () => menu.classList.toggle("menu--active");
+
+        searchBtn.onclick = () => menu.classList.toggle("menu--active")
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Fluid Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+<!-- https://www.sliderrevolution.com/resources/css-menu/-->
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <label class="logo">Logo</label>
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="" class="menu__link menu__link--active">Home</a>
+            </li>
+            <li class="menu__item">
+                <a href="" class="menu__link">About</a>
+            </li>
+            <li class="menu__item">
+                <a href="" class="menu__link">Services</a>
+            </li>
+            <li class="menu__item">
+                <a href="" class="menu__link">Contact</a>
+            </li>
+            <li class="menu__item">
+                <a href="" class="menu__link">Feedback</a>
+            </li>
+        </ul>
+
+        <label class="menu__icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+    <script src="https://kit.fontawesome.com/832b6972f7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu__icon').click(function () {
+                $('.menu__list').toggleClass('show');
+            });
+        });
+    </script>
+</body>
+</html>
