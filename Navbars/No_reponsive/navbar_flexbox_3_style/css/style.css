@@ -22,6 +22,8 @@ header{
 }
 
 .logo {
+    color: #edf0f1;
+    font: bold 1.5em 'Montserrat', sans-serif;
     cursor: pointer;
 }
 
