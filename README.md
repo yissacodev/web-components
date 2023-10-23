@@ -5,3 +5,4 @@ Here, I collected some of my components that I made while I designed web pages f
 
  - Navigation bars
  - Tables
+ - Input fields
